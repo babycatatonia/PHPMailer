@@ -78,6 +78,8 @@ if (!$mail->send()) {
     #}
 }
 
+save_mail($mail);
+
 //Section 2: IMAP
 //IMAP commands requires the PHP IMAP Extension, found at: https://php.net/manual/en/imap.setup.php
 //Function to call which uses the PHP imap_*() functions to save messages: https://php.net/manual/en/book.imap.php
